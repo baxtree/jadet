@@ -1,0 +1,57 @@
+<!-- Fixed navbar -->
+<style>
+body {
+   padding-top:50px;
+   padding-bottom:30px;
+}
+</style>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" rel="home" href="/"><b>Jade Tea House</b></a>
+      </div>
+      <div class="row">
+         <div id="navbar" class="navbar-collapse collapse navbar-right" style="text-align:center;">
+            <ul class="nav navbar-nav">
+               <li {% if page.title == "Navigation1" %}class="active"{% endif %}>
+                  <a href="/nav1/">Navigation1</a>
+               </li>
+               <li {% if page.title == "Navigation2" or page.url contains "nav2" %}class="active"{% endif %}>
+                  <a href="/nav2/">Navigation2</a>
+               </li>
+               <li {% if page.title == "Navigation3" %}class="active"{% endif %}>
+                  <a href="/nav3/">Navigation3</a>
+               </li>
+               <li {% if page.title == "Navigation4" or page.url contains "nav4" %}class="active"{% endif %}>
+                  <a href="/nav4/">Navigation4</a>
+               </li>
+               <li {% if page.title == "Navigation5" %}class="active"{% endif %}>
+                  <a href="/nav5/">Navigation5</a>
+               </li>
+               <!-- <li>
+                  <a href="/feed.xml"><i class="fa fa-rss fa-inverse"></i></a>
+               </li> -->
+            </ul>
+<!--
+            <form class="navbar-form navbar-right" role="search">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search (non-functional)">
+                  <span class="input-group-btn">
+                     <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                     </button>
+                  </span>
+              </div>
+            </form>
+-->
+         </div>
+      </div><!--/.nav-collapse -->
+   </div>
+</nav>
