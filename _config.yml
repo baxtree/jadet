@@ -1,0 +1,39 @@
+name: "Jade Tea House Website"
+tagline: "Jade Tea House Website"
+description: "Jade Tea House Website"
+
+url: "http://www.jadeteahouse.co.uk"
+author :
+   name : Xi Bai
+   email : xi.bai.ed@gmail.com
+   github : baxtree
+
+markdown: kramdown #rdiscount
+highlighter: pygments
+permalink: pretty #/:categories/:title
+
+gems:
+   - jekyll-sitemap
+
+defaults:
+   values:
+      layout: "default"
+
+exclude:
+ - "Gemfile"
+ - "Gemfile.lock"
+ - "LICENSE"
+ - "relic"
+ - "assets/less/"
+ - "Gruntfile.js"
+ - "package.json"
+ - "node_modules"
+ - "bower.json"
+ - "bower_components"
+ - ".gitignore"
+
+include:
+ - '.nojekyll'
+
+sharing:
+   provider: false
