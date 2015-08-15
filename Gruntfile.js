@@ -119,7 +119,7 @@ module.exports = function(grunt) {
             command: [
                'bower update',
                'bundle update',
-					'npm update',
+					     'npm update',
                'echo "check if npm update is still broken"'
             ].join(' && ')
          }
@@ -218,18 +218,18 @@ module.exports = function(grunt) {
                '_posts/**',
                '_plugins/*',
                'conference/**',
-					'community/**',
+					     'community/**',
                'papers/**',
                'install/**',
                'contact/*',
                'docs/*',
-					'stats/*',
+					     'stats/*',
                'modules/index.html',
                'assets/img/**',
                '_config.yml',
                'index.html',
-					'404.html',
-					'README.md',
+					     '404.html',
+					     'README.md',
                'favicon.ico'
             ],
             tasks: ['shell:build'],
